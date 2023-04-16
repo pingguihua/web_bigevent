@@ -16,7 +16,7 @@ $(function () {
           ,'密码必须6到12位，且不能出现空格'
         ],
         repwd:value => {
-        let pwd = $('.reg-box [name=passward]').val()
+        let pwd = $('.reg-box [name=password]').val()
           if (value !== pwd) {
             return '两次密码不一致'
           }
@@ -32,7 +32,7 @@ $(function () {
       username: $('#form_reg [name=username]').val(),
       password: $('#form_reg [name=password]').val()
     }
-    $.post('/api/reguser', data, function(res) {
+    $.post('/api/register', data, function(res) {
       if (res.status !== 0) {
         return layer.msg(res.message)
       }

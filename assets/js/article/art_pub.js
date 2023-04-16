@@ -17,6 +17,7 @@ $(function() {
  				}
  				// 调用模板引擎，渲染分类的下拉菜单
  				var htmlStr = template('tpl-cate', res)
+				console.log(htmlStr);
  				$('[name=cate_id]').html(htmlStr)
  				// 一定要记得调用 form.render() 方法
  				form.render()

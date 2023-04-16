@@ -28,7 +28,7 @@ $(function() {
 	  e.preventDefault()
 	  $.ajax({
 	    method: 'POST',
-	    url: '/my/article/addcates',
+	    url: '/my/article/cates',
 	    data: $(this).serialize(),
 	    success: function(res) {
 	      if (res.status !== 0) {

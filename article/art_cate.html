@@ -50,8 +50,8 @@
 	     <td>{{$value.name}}</td>
 	     <td>{{$value.alias}}</td>
 	     <td>
-	       <button type="button" data-id="{{$value.Id}}" class="layui-btn layui-btn-xs btn-edit">编辑</button>
-	       <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.Id}}">删除</button>
+	       <button type="button" data-id="{{$value.id}}" class="layui-btn layui-btn-xs btn-edit">编辑</button>
+	       <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.id}}">删除</button>
 	     </td>
 	   </tr>
 	   {{/each}}
@@ -83,7 +83,7 @@
 	 <script type="text/html" id="dialog-edit">
 	   <form class="layui-form" id="form-edit" lay-filter="form-edit">
 	     <!-- 隐藏域，保存 Id 的值 -->
-	     <input type="hidden" name="Id">
+	     <input type="hidden" name="id">
 	     <div class="layui-form-item">
 	       <label class="layui-form-label">分类名称</label>
 	       <div class="layui-input-block">
